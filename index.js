@@ -13,12 +13,11 @@ const app = express();
  
 
 
-var homeRouter = require('./app/routes/home.router')
+require('./app/routes/home.router')(app)
+ require('./app/routes/book.router')(app)
 
 
-app.use('/',homeRouter);
-app.use('/about',homeRouter)
 
 app.listen(3000, 'localhost', function() {
-    console.log("listening on http://localhost:3000");
+    console.log("Server listening on http://localhost:3000");
 });

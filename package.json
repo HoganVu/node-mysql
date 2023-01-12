@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/HoganVu/node-mysql#readme",
   "dependencies": {
+    "express": "^4.18.2",
     "mysql": "^2.18.1"
   }
 }

@@ -10,13 +10,13 @@ let con = mysql.createConnection({
 
 
 // connect 
-// con.connect(function(err) {
-//     if(err) {
-//         return console.error('error:' + err.message)
-//     }
+con.connect(function(err) {
+    if(err) {
+        return console.error('error:' + err.message)
+    }
 
-//     console.log('Connect to the mysql server! Success connnected');
-// });
+    console.log('Connect to the mysql server! Congraturation you connnect done.');
+});
 // connect 
 
 // create database
@@ -125,3 +125,26 @@ let con = mysql.createConnection({
 //     });
 //   });
 // insert table
+
+// con.connect(function(err) {
+//     if (err) throw err;
+//     con.query("SELECT * FROM customers", function (err, result, fields) {
+//       if (err) throw err;
+//       console.log(result);
+//     });
+//   });
+
+//   con.connect(function(err) {
+//     if (err) throw err;
+//     con.query("SELECT * FROM restaurant", function (err, result, fields) {
+//       if (err) throw err;
+//       console.log(result);
+//     });
+//   });
+//   con.connect(function(err) {
+//     if (err) throw err;
+//     con.query("SELECT * FROM student", function (err, result, fields) {
+//       if (err) throw err;
+//       console.log(result);
+//     });
+//   });
